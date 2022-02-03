@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script async src="js/factorial.js"></script>
+    <script async src="js/saludo.js"></script>
+    <script async src="js/validar.js"></script>
+    <title>Pantalla Principal</title>
+  </head>
+  <body onload="welcome()">
+    <center>
+      <h5 id="saludo" class="my-5"></h5>
+      <h3 class="display-4 my-5">Calcular Factorial</h3>
+
+      <div class="container-sm w-25">
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            onpaste="return false;"
+            onDrop="return false;"
+            autocomplete="off"
+            id="factorial"
+            name="factorial"
+            class="form-control"
+            placeholder="Introduce un número"
+            onkeypress="return searchKeyPress(event);"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="botonCalcular"
+          >
+            Aceptar
+          </button>
+        </div>
+      </div>
+      <div id="contenedor" class="my-5"></div>
+    </center>
+  </body>
+</html>

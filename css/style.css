@@ -1,0 +1,7 @@
+#contenedor {
+  width: fit-content;
+  max-width: 80%;
+  height: 550px;
+  max-height: 90%;
+  overflow: auto;
+}
